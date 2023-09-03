@@ -26,7 +26,7 @@ const FacebookPixel = ({ trackPurchase }) => {
       "https://connect.facebook.net/en_US/fbevents.js"
     );
 
-    window.fbq("init", "957307775323988");
+    window.fbq("init", "854578076024746");
     window.fbq("track", "PageView");
     if (trackPurchase) {
       window.fbq("track", "Purchase", {
