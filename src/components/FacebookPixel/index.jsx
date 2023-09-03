@@ -30,7 +30,7 @@ const FacebookPixel = ({ trackPurchase }) => {
     window.fbq("track", "PageView");
     if (trackPurchase) {
       window.fbq("track", "Purchase", {
-        value: 15.42,
+        value: 15.5,
         currency: "USD",
       });
     }

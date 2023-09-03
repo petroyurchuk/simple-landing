@@ -7,7 +7,7 @@ const Price = () => {
       <PriceBlock
         radius={"rounded-l-[50px]"}
         padding={"pr-10 pt-5"}
-        price={870}
+        price={890}
         textInfo={"Звичайна ціна"}
         bgColor={"bg-red-500"}
         textStyle={"line-through"}
@@ -16,7 +16,7 @@ const Price = () => {
       <PriceBlock
         radius={"rounded-r-[50px]"}
         padding={"pl-10 pt-5"}
-        price={564}
+        price={584}
         textInfo={"Ціна по знижці"}
         bgColor={"bg-green-500"}
         textStyle={" "}
