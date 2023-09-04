@@ -11,8 +11,6 @@ const FormOrder = () => {
   const textFail = "Сталося помилка при відправці даних.Спробуйте пізніше";
   const styles = {
     able: "block m-auto min-w-[310px] max-w-[400px] h-[80px] rounded-[40px] shadow-lg shadow-black font-bold text-[20px] leading-[80px] text-[#724b00] uppercase text-center cursor-pointer bg-[#f9c802] transition-all duration-200 hover:tracking-wider mt-[15px]",
-    disable:
-      "bg-gray-300 text-gray-600 py-2 px-4 rounded cursor-not-allowed opacity-60 disabled:opacity-100 disabled:bg-gray-300 disabled:text-gray-600 w-[310px] h-[70px]",
   };
   const textSuccess =
     "Дякую за замовлення, очікуйте дзвінка від менеджера для уточнення даних";
@@ -103,10 +101,10 @@ const FormOrder = () => {
         </div>
       </div>
       <button
-        className={phoneInput && nameInput ? styles.able : styles.disable}
+        className={styles.able}
         type="submit"
         onClick={() => setIsButtonClicked(true)}
-        disabled={state.submitting || !phoneInput || !nameInput}
+        disabled={state.submitting}
       >
         Оформити замовлення
       </button>
